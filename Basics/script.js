@@ -67,3 +67,6 @@ else
 console.log(s*y);
 console.log(16**3);
 // console.log(" ==false);
+
+newArray = [25,79,4,6]
+console.log(newArray);

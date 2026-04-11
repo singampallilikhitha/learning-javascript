@@ -70,3 +70,14 @@ console.log(16**3);
 
 newArray = [25,79,4,6]
 console.log(newArray);
+// push-> add last
+// pop -> remove last
+// shift-> remove first
+// unshift-> add first
+
+// newArray.push(52);//add last
+// newArray.pop(79);
+// newArray.pop();//both are removing last element only
+// newArray.shift();//remove first element
+// newArray.unshift(56);//add in first position
+console.log(newArray);

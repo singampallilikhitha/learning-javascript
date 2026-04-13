@@ -81,40 +81,104 @@
 // newArray.shift();//remove first element
 // newArray.unshift(56);//add in first position
 // console.log(newArray);
-const obj = {
-    id : 1,
-    name : "Hello"
-}
-const obj1 = {
-    a : [2 , 5 ,6]
-}
-console.log(obj1.a);
-obj.loc = "Hyderabad";
-console.log(obj.id + " " + obj.name + " " + obj.loc);
-console.log(obj);
-//Arrays with objects
+// const obj = {
+//     id : 1,
+//     name : "Hello"
+// }
+// const obj1 = {
+//     a : [2 , 5 ,6]
+// }
+// console.log(obj1.a);
+// obj.loc = "Hyderabad";
+// console.log(obj.id + " " + obj.name + " " + obj.loc);
+// console.log(obj);
+// //Arrays with objects
 
-Data = [
-    {
-        id : 102,
-        name : "Likhitha",
-        marks : 530
-    },
-    {
-        id : 103,
-        name : "Lotus",
-        marks : 560
-    },
-    {
-        id : 104,
-        name : "Hello",
-        marks : 600
-    }
-]
-console.log(Data);
-console.log(Data[0]);
-console.log(Data[1].name);
+// Data = [
+//     {
+//         id : 102,
+//         name : "Likhitha",
+//         marks : 530
+//     },
+//     {
+//         id : 103,
+//         name : "Lotus",
+//         marks : 560
+//     },
+//     {
+//         id : 104,
+//         name : "Hello",
+//         marks : 600
+//     }
+// ]
+// console.log(Data);
+// console.log(Data[0]);
+// console.log(Data[1].name);
 //for of -> arrays
 // for in -> objects
 
+// function myFun(){
+//     // console.log(-1);
+//     return -1;
+// }
+// myFun();
+// console.log(myFun());
 
+// console.log(myFun);
+
+// function myFun(num1,num2){
+//     return num1-num2;
+// }
+// function myFun(num1,num2){
+//     return num1+num2
+// }
+// //recently written function is executing(same name)
+// console.log(myFun(12,4));
+
+// const x = function myFun(num1,num2){
+//     return num1+num2;
+// }
+// console.log(x(52," hello"));
+// console.log(x(12,4));
+
+
+// function doMath(num1,num2,op){
+//     switch(op){
+//         case "+" : return "The addition of " +num1+ " and " + num2 + " is " + (num1+num2);
+//         case "-" : return "The Subtraction of " +num1+ " and " + num2 + " is " + (num1-num2);
+//         case "*" : return "The Multiplication of " +num1+ " and " + num2 + " is " + (num1*num2);
+//         case "/" : return "The Division of " +num1+ " and " + num2 + " is " + (num1/num2);
+//         case "%" : return "The Modulos(Remainder) of " +num1+ " and " + num2 + " is " + (num1%num2);
+//         case "**" : return "The Power of " +num1+ " and " + num2 + " is " + (num1**num2); 
+//     }
+// }
+// console.log(doMath(1,2,"%"));
+
+
+const doMath = (num1,num2,op)=>{
+    switch(op){
+        case "+":
+            console.log(`The addition of ${num1} and ${num2} is ${num1 + num2} `);
+            break;
+        case "-":
+            console.log(`The subtraction of ${num1} and ${num2} is ${num1 - num2} `);
+            break;
+        case "*":
+            console.log(`The multiplication of ${num1} and ${num2} is ${num1 * num2} `);
+            break;
+        case "/":
+            console.log(`The division of ${num1} and ${num2} is ${num1 / num2} `);
+            break;
+        case "%":
+            console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2} `);
+            break;
+        case "**":
+            console.log(`The power of ${num1} and ${num2} is ${num1 ** num2} `);
+            break;
+        default:
+            console.log("Please pass a Valid Input");
+            break;
+    }
+}
+
+doMath(5,15,"+");

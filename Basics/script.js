@@ -155,36 +155,59 @@
 // console.log(doMath(1,2,"%"));
 
 //Interpolation
-let name = "Likhitha";
-let age = 22;
-console.log(`My name is ${name} and my age is ${age}`);
+// let name = "Likhitha";
+// let age = 22;
+// console.log(`My name is ${name} and my age is ${age}`);
 
 
 
-const doMath = (num1,num2,op)=>{
-    switch(op){
-        case "+":
-            console.log(`The addition of ${num1} and ${num2} is ${num1 + num2} `);
-            break;
-        case "-":
-            console.log(`The subtraction of ${num1} and ${num2} is ${num1 - num2} `);
-            break;
-        case "*":
-            console.log(`The multiplication of ${num1} and ${num2} is ${num1 * num2} `);
-            break;
-        case "/":
-            console.log(`The division of ${num1} and ${num2} is ${num1 / num2} `);
-            break;
-        case "%":
-            console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2} `);
-            break;
-        case "**":
-            console.log(`The power of ${num1} and ${num2} is ${num1 ** num2} `);
-            break;
-        default:
-            console.log("Please pass a Valid Input");
-            break;
-    }
-}
+// const doMath = (num1,num2,op)=>{
+//     switch(op){
+//         case "+":
+//             console.log(`The addition of ${num1} and ${num2} is ${num1 + num2} `);
+//             break;
+//         case "-":
+//             console.log(`The subtraction of ${num1} and ${num2} is ${num1 - num2} `);
+//             break;
+//         case "*":
+//             console.log(`The multiplication of ${num1} and ${num2} is ${num1 * num2} `);
+//             break;
+//         case "/":
+//             console.log(`The division of ${num1} and ${num2} is ${num1 / num2} `);
+//             break;
+//         case "%":
+//             console.log(`The reminder of ${num1} and ${num2} is ${num1 % num2} `);
+//             break;
+//         case "**":
+//             console.log(`The power of ${num1} and ${num2} is ${num1 ** num2} `);
+//             break;
+//         default:
+//             console.log("Please pass a Valid Input");
+//             break;
+//     }
+// }
 
-doMath(5,15,"+");
+// doMath(5,15,"+");
+
+
+//DOM(Document object Manipulation)
+//by id(highest priority)
+
+// console.log(document); //print entire html doc
+// console.log(document.head); //print only head code
+// console.log(document.getElementById("Hehe")); // get only h1 tag using id
+// let haha = document.getElementById("Hehe");
+// haha.innerText = "Likhitha"; // change the text in html
+// console.log(document.getElementById("Hehe")); // text changed
+// haha.innerHTML = "<b>Happy</b>"; // changed text with applying any html tags
+// console.log(document.getElementById("Hehe"));
+
+//by class
+
+let h = document.getElementsByClassName("h1");
+console.log(h);
+let box = document.getElementsByClassName("box");
+console.log(box);
+let boss = document.getElementsByClassName("boss");
+boss[1].innerHTML = "bye";
+box[0].innerHTML = "box";

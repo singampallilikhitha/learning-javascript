@@ -154,6 +154,12 @@
 // }
 // console.log(doMath(1,2,"%"));
 
+//Interpolation
+let name = "Likhitha";
+let age = 22;
+console.log(`My name is ${name} and my age is ${age}`);
+
+
 
 const doMath = (num1,num2,op)=>{
     switch(op){

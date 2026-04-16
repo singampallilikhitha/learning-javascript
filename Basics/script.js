@@ -204,10 +204,96 @@
 
 //by class
 
-let h = document.getElementsByClassName("h1");
-console.log(h);
-let box = document.getElementsByClassName("box");
-console.log(box);
-let boss = document.getElementsByClassName("boss");
-boss[1].innerHTML = "bye";
-box[0].innerHTML = "box";
+// let h = document.getElementsByClassName("h1");
+// console.log(h);
+// let box = document.getElementsByClassName("box");
+// console.log(box);
+// let boss = document.getElementsByClassName("boss");
+// boss[1].innerHTML = "bye";
+// box[0].innerHTML = "box";
+
+
+// const myFun = ()=>{
+//     let display = document.getElementById("display");
+//     display.innerHTML = "Ok Bye";
+// }
+
+
+// const myFun = ()=>{
+//     let display = document.getElementById("display");
+//     display.innerHTML = display.innerHTML === "Hello Guys!!" ? "Ok Bye" : "Hello Guys!!";
+//     if(display.innerHTML === "Hello Guys!!"){
+//             display.style.color = "red";
+//     }
+//     else{
+//         display.style.color = "green";
+//     }
+// }
+
+
+// let isShow = true;
+// const change = () => {
+//     let myImage = document.getElementById("myImage");
+//     if(isShow){
+//         myImage.src = "Doraemon.png";
+//         isShow = !isShow;
+//     }
+//     else{
+//         myImage.src = "shinchan.jpg";
+//         isShow = !isShow;
+//     }
+// }
+
+// let isShow = true
+// const change = () =>{
+//     if(isShow){
+//         document.getElementById("D");
+//     }
+//     else{
+//         document.getElementById("S");
+//     }
+//     isShow = !isShow;
+// }
+
+
+//different arithmetic operations through buttons
+
+// const getValues = ()=>{
+//     return{
+//     val1 : document.getElementById("value1"),
+//     val2 : document.getElementById("value2")
+//     };
+// }
+const add = ()=>{
+    event.preventDefault() //control default loadings recommended to use
+    //let{val1 : val2} = getValues();
+    let val1 = document.getElementById("value1")
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+    let sum = (Number)(val1.value) + (Number)(val2.value)
+    display.innerHTML = `The Sum of ${val1.value} and ${val2.value} is ${sum} `
+}
+const multi = ()=>{
+    event.preventDefault()
+    let val1 = document.getElementById("value1")
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+    let multi = (Number)(val1.value)*(Number)(val2.value)
+    display.innerHTML = `The Multiplication of ${val1.value} and ${val2.value} is ${multi}`
+}
+const Div = ()=>{
+    event.preventDefault()
+    let val1 = document.getElementById("value1")
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+    let multi = (Number)(val1.value)/(Number)(val2.value)
+    display.innerHTML = `The Division of ${val1.value} and ${val2.value} is ${multi}`
+}
+const power = ()=>{
+    event.preventDefault()
+    let val1 = document.getElementById("value1")
+    let val2 = document.getElementById("value2")
+    let display = document.getElementById("display")
+    let multi = (Number)(val1.value)**(Number)(val2.value)
+    display.innerHTML = `The Power of ${val1.value} and ${val2.value} is ${multi}`
+}
